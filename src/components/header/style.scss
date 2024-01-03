@@ -28,9 +28,24 @@
         justify-content: space-between;
     }
     .logo {
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+        font-size: 1.5rem;
+        font-weight: 900;
+        background: var(--gradient);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
         cursor: pointer;
+        @include md{
+            font-size: 1.9rem;
+        }
         img {
-            height: 50px;
+            height: 28px;
+            @include md{
+                height: 35px;
+            }
         }
     }
     .menu-items {

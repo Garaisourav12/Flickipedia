@@ -40,7 +40,7 @@ function HeroBanner() {
           <span className="title">Welcome.</span>
 
           <span className="subtitle">
-            Millios of movies, TV shows and people to discover.
+            Millions of movies, TV shows and people to discover.
             Explore now.
           </span>
 
@@ -52,7 +52,7 @@ function HeroBanner() {
               value={query}
               onChange={(e) => setQuery(e.target.value)}
             />
-            <button>Search</button>
+            <button onClick={() => navigate(`/search/${query}`)}>Search</button>
           </div>
         </div>
       </ContentWrapper>
