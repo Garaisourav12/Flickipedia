@@ -53,6 +53,16 @@
                 background-color: var(--black-light);
                 border-radius: 20px;
                 .react-select__value-container {
+                    // overflow-x: hidden;
+                    // flex-wrap: nowrap;
+                    :first-child{
+                        &.react-select__multi-value{
+                            margin-left: 8px;
+                        }
+                        &.react-select__single-value{
+                            margin-left: 10px;
+                        }
+                    }
                     .react-select__placeholder,
                     .react-select__input-container {
                         color: white;
@@ -108,7 +118,7 @@
                 margin-bottom: 30px;
             }
         }
-        .loading-spinner{
+        .last-box{
             grid-column: 1 / -1;
         }
     }
